@@ -3,6 +3,7 @@
 *.pdf
 *.docx
 *.txt
+*.DS_Store
 
 ### C++ ###
 # Prerequisites
