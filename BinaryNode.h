@@ -11,7 +11,7 @@ private:
 
 public:
     // constructors
-    BinaryNode(const ItemType & anItem)    {item = anItem; leftPtr = 0; rightPtr = 0;}
+    BinaryNode(const ItemType & anItem)    {item = anItem; leftPtr = nullptr; rightPtr = nullptr;}
     BinaryNode(const ItemType & anItem,
                BinaryNode<ItemType>* left,
                BinaryNode<ItemType>* right) {item = anItem; leftPtr = left; rightPtr = right;}
@@ -26,7 +26,7 @@ public:
     BinaryNode<ItemType>* getRightPtr() const {return rightPtr;}
 
     // other functions
-    bool isLeaf() const {return (leftPtr == 0 && rightPtr == 0);}			//return true if node is leaf node
+    bool isLeaf() const {return (leftPtr == nullptr && rightPtr == nullptr);}			//return true if node is leaf node
 
 };
 

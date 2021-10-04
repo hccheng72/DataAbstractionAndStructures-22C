@@ -78,7 +78,7 @@ int main()
 	{
 		cout << "\n\t\t- Enter a selection: ";
 		cin >> choice;
-      cin.ignore(100, '\n');
+		cin.ignore(100, '\n');
 
 		switch(choice)
 		{
@@ -178,9 +178,9 @@ void displayMenu()
 void buildBstHash(BinarySearchTree<Course, ClassList> &bst, HashTable<ClassList> &hash,
 																				  ifstream &fin)
 {
-	string  crn, code, title, instructor, time, textbook;
-	double  rate;
-	int 	  size;
+	string crn, code, title, instructor, time, textbook;
+	double rate;
+	int size;
 
 	// input file validation
 	if (!fin)
@@ -382,7 +382,7 @@ void displayList(BinarySearchTree<Course, ClassList> &bst, HashTable<ClassList> 
 	cout <<  "\t\t========================================================"
 		  <<  "============================================================\n";
 	cout <<	"\t\t  CRN   Code        Title                               "
-		  <<  "\t\t\t\t\t\t Instructor             Time\n";
+		  <<  "\t\t Instructor             Time\n";
 	cout <<  "\t\t========================================================"
 		  <<  "============================================================\n";
 
@@ -611,13 +611,13 @@ int isPrime(int nn)
 void welcome()
 {
 	cout << "\t\t*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~" << endl;
-	cout << "\t\t\t\t\t\tWelcome to De Anza Computer Science Courses Database" 					 << endl;
-   cout << "\t\t*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~" << endl;
-   cout << "\t\tThis project is integrating the function of course register related websites" << endl
+	cout << "\t\t\tWelcome to De Anza Computer Science Courses Database" 					 << endl;
+	cout << "\t\t*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~" << endl;
+	cout << "\t\tThis project is integrating the function of course register related websites" << endl
 		  << "\t\twhich De Anza students usually use. For instance, when searching for a class" << endl
 	     << "\t\tby CRN or class code, The basic information about class will be printed out"  << endl
 		  << "\t\ton the screen. Such as, lecture time, name of the instructor, the rating on"  << endl
-		  << "\t\t\t\t\t\t\t  class, and related textbook information." 								 << endl;
+		  << "\t\tclass, and related textbook information." 								 << endl;
 	cout << "\t\t*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~" << endl;
 	cout << endl;
 }
@@ -631,11 +631,11 @@ void farewell()
 {
 	cout << endl << endl;
 	cout << "\t\t*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~" << endl;
-	cout << "\t\t\t\tThank you for using De Anza Computer Science Courses Database" 				 << endl;
-   cout << "\t\t*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~" << endl;
-   cout << "\t\t\t This programme is developed by Anran Luo, Huichan Cheng, Xinyi Guo" 		 << endl
-		  << "\t\t\t\t\t\tSpeical Thanks:  Our instructor -- Delia Garbacea" 						 << endl
-		  << "\t\t\t\t\t\tHave a great day and please check the output file" 						 << endl;
+	cout << "\t\t\tThank you for using De Anza Computer Science Courses Database" 				 << endl;
+	cout << "\t\t*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~" << endl;
+	cout << "\t\t\tThis programme is developed by Anran Luo, Huichan Cheng, Xinyi Guo" 		 << endl
+		  << "\t\t\tSpeical Thanks:  Our instructor -- Delia Garbacea" 						 << endl
+		  << "\t\t\tHave a great day and please check the output file" 						 << endl;
 	cout << "\t\t*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~" << endl;
 	cout << endl;
 

@@ -25,7 +25,7 @@ public:
     void setNoCollisions(int nCol) {noCollisions = nCol;}
 
     // getters
-	 ItemType getItem() const {return item;}
+	ItemType getItem() const {return item;}
     int getOccupied() const {return occupied;}
     int getNoCollisions() const {return noCollisions;}
 };
